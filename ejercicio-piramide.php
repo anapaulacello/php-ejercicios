@@ -6,10 +6,13 @@
     </form>
     <?php 
         $num= $_GET['num'];
-        for ($i=1; $i <= $num; $i++) { 
-            for ($j=1; $j <=$i ; $j++) { 
-                echo "*";
+        for ($altura=1; $altura <= $num; $altura++) { 
+            for ($espacio=1; $espacio <=$num-$altura ; $espacio++) { 
+                echo "-";
             }
+            for ($asteriscos=1; $asteriscos <=($altura*2)-1 ; $asteriscos++) { 
+                echo "*";
+            } 
             echo"<br>";
         }
 
